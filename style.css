@@ -1,0 +1,79 @@
+/* Default (Light Theme) */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.timer {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.buttons button {
+  margin: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+.start { background: #4caf50; color: white; }
+.stop { background: #f44336; color: white; }
+.reset { background: #2196f3; color: white; }
+.lap { background: #ff9800; color: white; }
+.theme { background: #9c27b0; color: white; }
+
+.laps {
+  margin-top: 15px;
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.laps li {
+  list-style: none;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+/* Dark Theme */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+body.dark .laps li {
+  border-bottom: 1px solid #444;
+}
+
+
